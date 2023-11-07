@@ -1,4 +1,6 @@
 {
   "title": "Hi there",
-  "to-second-page": "Go to second page"
+  "to-second-page": "Go to second page",
+  "to-dinamic": "Go to {{id}} page",
+  "change-language": "change japanese"
 }
