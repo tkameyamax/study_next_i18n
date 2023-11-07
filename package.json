@@ -6,10 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "firebase deploy"
   },
   "dependencies": {
     "accept-language": "^3.0.18",
+    "firebase": "^10.5.2",
     "i18next": "^23.6.0",
     "i18next-resources-to-backend": "^1.1.4",
     "next": "14.0.1",
