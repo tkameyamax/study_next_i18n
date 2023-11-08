@@ -9,7 +9,7 @@ type Props = {
   };
 };
 
-const Page: NextPage<Props> = async ({ params: { lng } }) => {
+export default async function Page({ params: { lng } }: Props) {
   const { t } = await useTranslation(lng);
   const otherLanguages = languages.filter((language) => language !== lng);
 
@@ -35,6 +35,4 @@ const Page: NextPage<Props> = async ({ params: { lng } }) => {
       <Footer lng={lng} />
     </>
   );
-};
-
-export default Page;
+}

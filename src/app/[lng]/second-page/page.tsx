@@ -8,7 +8,7 @@ type Props = {
   };
 };
 
-const Page: NextPage<Props> = async ({ params: { lng } }) => {
+export default async function Page({ params: { lng } }: Props) {
   const { t } = await useTranslation(lng, "second-page");
   return (
     <>
@@ -17,6 +17,4 @@ const Page: NextPage<Props> = async ({ params: { lng } }) => {
       <Footer lng={lng} />
     </>
   );
-};
-
-export default Page;
+}

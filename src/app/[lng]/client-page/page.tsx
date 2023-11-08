@@ -12,7 +12,7 @@ type Props = {
   };
 };
 
-export const Page: NextPage<Props> = ({ params: { lng } }) => {
+export default function Page({ params: { lng } }: Props) {
   const { t } = useTranslation(lng, "client-page");
   const [counter, setCounter] = useState(0);
   return (
@@ -29,6 +29,4 @@ export const Page: NextPage<Props> = ({ params: { lng } }) => {
       <Footer lng={lng} />
     </>
   );
-};
-
-export default Page;
+}

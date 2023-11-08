@@ -14,13 +14,11 @@ type Props = {
   };
 };
 
-const RootLayout: NextPage<Props> = ({ children, params: { lng } }) => {
+export default function RootLayout({ children, params: { lng } }: Props) {
   return (
     <html lang={lng} dir={dir(lng)}>
       <head />
       <body>{children}</body>
     </html>
   );
-};
-
-export default RootLayout;
+}
