@@ -2,6 +2,7 @@ import { NextPage } from "next";
 import Link from "next/link";
 import { useTranslation } from "../i18n";
 import { languages } from "../i18n/settings";
+import { Footer } from "./components/Footer";
 type Props = {
   params: {
     lng: string;
@@ -28,11 +29,7 @@ const Page: NextPage<Props> = async ({ params: { lng } }) => {
           {t("to-dinamic", { id: "cde" })}
         </Link>
       </div>
-      {otherLanguages.map((otherLanguage) => (
-        <div key={otherLanguage}>
-          <Link href={`/${otherLanguage}`}>{t("change-language")}</Link>
-        </div>
-      ))}
+      <Footer lng={lng} />
     </>
   );
 };

@@ -1,6 +1,5 @@
 {
   "title": "こんにちは",
   "to-second-page": "セカンドページへ",
-  "to-dinamic": "id: {{id}}ページへ",
-  "change-language": "英語へ"
+  "to-dinamic": "id: {{id}}ページへ"
 }
