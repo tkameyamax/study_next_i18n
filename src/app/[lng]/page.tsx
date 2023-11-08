@@ -20,6 +20,9 @@ const Page: NextPage<Props> = async ({ params: { lng } }) => {
         <Link href={`/${lng}/second-page`}>{t("to-second-page")}</Link>
       </div>
       <div>
+        <Link href={`/${lng}/client-page`}>{t("to-client-page")}</Link>
+      </div>
+      <div>
         <Link href={`/${lng}/dinamic/abc`}>
           {t("to-dinamic", { id: "abc" })}
         </Link>
