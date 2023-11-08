@@ -2,14 +2,22 @@ import Link from "next/link";
 import { Trans } from "react-i18next/TransWithoutContext";
 import { languages } from "../../../i18n/settings";
 import { useTranslation } from "../../../i18n";
+import { NextPage } from "next";
 
-// TODO: tsx にするとSwitch from <strong>{{ lng }}</strong> to:{" "}部分でエラー
-export const Footer = async ({ lng }) => {
+type Props = {
+  lng: string;
+};
+
+export const Footer: NextPage<Props> = async ({ lng }) => {
   const { t } = await useTranslation(lng, "footer");
   return (
     <footer style={{ marginTop: 50 }}>
       <Trans i18nKey="languageSwitcher" t={t}>
-        Switch from <strong>{{ lng }}</strong> to:{" "}
+        Switch from{" "}
+        <strong>
+          <>{{ lng }}</>
+        </strong>{" "}
+        to:{" "}
       </Trans>
       {languages
         .filter((l) => lng !== l)
