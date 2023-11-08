@@ -1,5 +1,4 @@
 import { dir } from "i18next";
-import type { NextPage } from "next";
 import React from "react";
 import { languages } from "../i18n/settings";
 

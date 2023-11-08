@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useTranslation } from "../../i18n/client";
 import { Footer } from "../components/Footer/client";
 import { useState } from "react";
-import { NextPage } from "next";
 
 type Props = {
   params: {
