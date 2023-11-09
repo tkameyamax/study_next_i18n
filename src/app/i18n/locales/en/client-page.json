@@ -1,7 +1,7 @@
 {
-  "title": "Client page",
+  "back-to-home": "Go to home",
   "counter_one": "one selected",
   "counter_other": "{{count}} selected",
-  "counter_zero": "none selected",
-  "back-to-home": "Back to home"
+  "counter_zero": "Nothing has been selected",
+  "title": "Client page"
 }
