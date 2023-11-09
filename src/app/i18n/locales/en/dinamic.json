@@ -1,5 +1,5 @@
 {
-  "back-to-home": "Go to home",
+  "back-to-home": "Back to home",
   "description": "The ID for this page is {{id}}",
   "title": "This is a dynamic routing page"
 }
