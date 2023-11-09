@@ -1,5 +1,6 @@
 {
   "title": "こんにちは",
   "to-second-page": "セカンドページへ",
+  "to-client-page": "クライアントページへ",
   "to-dinamic": "id: {{id}}ページへ"
 }
