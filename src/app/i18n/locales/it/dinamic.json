@@ -1,0 +1,5 @@
+{
+  "back-to-home": "Tornare a casa",
+  "description": "L'ID per questa pagina è {{id}}",
+  "title": "Questa è una pagina di routing dinamica"
+}

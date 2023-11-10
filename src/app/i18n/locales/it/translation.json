@@ -1,0 +1,6 @@
+{
+  "title": "Ciao",
+  "to-client-page": "Vai alla pagina del cliente",
+  "to-dinamic": "id: Vai alla {{id}} pagina",
+  "to-second-page": "Vai alla seconda pagina"
+}
