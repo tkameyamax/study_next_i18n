@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useTranslation } from "../i18n";
-import { languages } from "../i18n/settings";
 import { Footer } from "./components/Footer";
 type Props = {
   params: {
@@ -10,7 +9,6 @@ type Props = {
 
 export default async function Page({ params: { lng } }: Props) {
   const { t } = await useTranslation(lng);
-  const otherLanguages = languages.filter((language) => language !== lng);
 
   return (
     <>
