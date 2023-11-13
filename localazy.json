@@ -1,6 +1,7 @@
 {
   "upload": {
     "type": "json",
+    "deprecate": "project",
     "files": "src/app/i18n/locales/jp/**.json"
   },
   "download": {
